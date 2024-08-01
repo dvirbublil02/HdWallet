@@ -1,0 +1,107 @@
+/* main.css */
+.main {
+    text-align: center;
+  }
+  
+  .main-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .main-link {
+    color: #61dafb;
+  }
+  
+  .coin-cell {
+    display: flex;
+    align-items: center;
+  }
+  
+  .coin-image {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+  }
+  
+  .coin-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .modal-content a {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* Main.css */
+.main-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.coin-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.custom-toast {
+  text-align: left; /* Align text to the left */
+  font-size: 14px; /* Adjust font size if necessary */
+}
+
+.custom-toast a {
+  color: #007bff; /* Link color */
+  text-decoration: underline; /* Underline links */
+}
+
+.custom-toast div {
+  margin-bottom: 10px; /* Add space between lines */
+}

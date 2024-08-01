@@ -1,17 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Wallet from './Wallet'; 
+import CreateWallet from './CreateWallet';
+import RestoreWallet from './RestoreWallet';
+import OpenWallet from './OpenWallet';
+import WalletView from './WalletView';
+import Transfer from './Transfer';
+import './index.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+  <Router>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/wallet" element={<Wallet />} /> 
+      <Route path="/create-wallet" element={<CreateWallet />} />
+      <Route path="/open-wallet" element={<OpenWallet />} />
+      <Route path="/restore-wallet" element={<RestoreWallet />} />
+      <Route path="/wallet-view" element={<WalletView />} /> 
+      <Route path="/transfer" element={<Transfer />} /> 
+    </Routes>
+  </Router>,
+  document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
